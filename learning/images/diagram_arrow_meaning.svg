@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" viewBox="0 0 860 360">
+  <defs>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <style>
+    .bg { fill: #ffffff; }
+    .title { font: 700 28px 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; fill: #111827; }
+    .label { font: 600 22px 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; fill: #111827; }
+    .text { font: 20px 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; fill: #374151; }
+    .wire { stroke: #111827; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .current { stroke: #dc2626; stroke-width: 6; fill: none; marker-end: url(#arrow-red); }
+    .panel { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 18; }
+  </style>
+
+  <rect class="bg" width="860" height="360"/>
+  <text class="title" x="36" y="46">三极管箭头的意思：看“发射极的传统电流方向”，不是看电子流方向</text>
+
+  <rect class="panel" x="42" y="78" width="360" height="226"/>
+  <rect class="panel" x="458" y="78" width="360" height="226"/>
+
+  <text class="label" x="190" y="118">NPN</text>
+  <line class="wire" x1="136" y1="196" x2="226" y2="196"/>
+  <line class="wire" x1="236" y1="132" x2="236" y2="260"/>
+  <line class="wire" x1="308" y1="110" x2="248" y2="176"/>
+  <line class="wire" x1="248" y1="214" x2="312" y2="274"/>
+  <path class="current" d="M264 230 L300 266"/>
+  <text class="text" x="78" y="264">箭头向外</text>
+  <text class="text" x="78" y="292">记忆法：NPN = Not Pointing iN</text>
+
+  <text class="label" x="605" y="118">PNP</text>
+  <line class="wire" x1="552" y1="196" x2="642" y2="196"/>
+  <line class="wire" x1="652" y1="132" x2="652" y2="260"/>
+  <line class="wire" x1="724" y1="110" x2="664" y2="176"/>
+  <line class="wire" x1="664" y1="214" x2="728" y2="274"/>
+  <path class="current" d="M718 264 L680 228"/>
+  <text class="text" x="494" y="264">箭头向内</text>
+  <text class="text" x="494" y="292">表示传统电流会流入发射极</text>
+
+  <text class="text" x="36" y="338">结论：箭头只是在告诉你器件类型和传统电流方向。它不是在告诉你电子往哪边跑。</text>
+</svg>

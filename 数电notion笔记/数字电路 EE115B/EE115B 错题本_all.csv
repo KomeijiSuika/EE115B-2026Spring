@@ -1,0 +1,7 @@
+﻿错题,状态,知识点,错误类型
+next-state 表：现态/次态方向写反,🟡 订正中,FSM · 状态转移表（Sequential Logic）,🔄 方向/顺序写反
+Part I Q7 — R-2R ladder DAC 相比 binary-weighted DAC 的主要优点,🔴 待复盘,R-2R ladder DAC 只用 R、2R 两种阻值 → 电阻匹配(matching)好、易制造，尤其适合集成电路；这才是它对 binary-weighted 的核心优势。binary-weighted 在高位数时需要跨好几个数量级的精密电阻，很难做准。错选 D「infinite resolution」是坑：任何有限位 DAC 分辨率都是有限的 V_ref/2^N，不存在无限分辨率。正确答案 B。,"🔀 概念混淆, 🔢 公式/定义记错"
+Part I Q13 — flip-flop 的 setup time 是哪段时间数据必须稳定,🔴 待复盘,setup time（建立时间）= 时钟有效边沿『之前』数据必须保持稳定的一段时间；hold time（保持时间）= 边沿『之后』还要继续稳定的一段时间。错选 A『After the active clock edge』= 把 setup 和 hold 记反了。口诀：setup 在前、hold 在后；数据要『早到（setup）+ 不要太早走（hold）』。正确答案 B。,"🔀 概念混淆, 🔄 方向/顺序写反"
+VHDL signal 赋值符号：<= vs :=,🔴 待复盘,VHDL signal assignment / variable assignment / 时序 process,"🔀 概念混淆, 🔢 公式/定义记错"
+三目运算符 sel ? a : b 的分支方向,🔴 待复盘,C / Verilog conditional operator；sel=1 取 true 分支,"🔀 概念混淆, 🔄 方向/顺序写反"
+XOR 的交换律、结合律与分配律,🔴 待复盘,Boolean algebra；XOR commutative / associative；AND distributes over XOR,"🔀 概念混淆, 🔢 公式/定义记错"

@@ -1,0 +1,45 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Local/hidden tool state
+.cache/
+.pipeline/
+.pytest_cache/
+__pycache__/
+
+# Temporary and generated outputs
+tmp/
+temp/
+build/
+dist/
+target/
+output/
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# HDL simulation/synthesis artifacts
+*.vcd
+*.vvp
+*.view
+*.jou
+*.json
+icarus/
+netlist/
+
+# Archives are usually exported/generated bundles.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
